@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "be60da31-ecc0-4d38-af6b-8aa476663703",
+		"name": "Spring-Security",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin-post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY4NTAwOTg3NiwiZXhwIjoxNjg1MDEwNzc2fQ.vUkJWtq0u-4pnjWPFeD2XkB3qbY2nvHRMG6r84lcVQg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/v1/admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin-get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY4NTAwOTg3NiwiZXhwIjoxNjg1MDEwNzc2fQ.vUkJWtq0u-4pnjWPFeD2XkB3qbY2nvHRMG6r84lcVQg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/v1/admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "management-post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQG1haWwuY29tIiwiaWF0IjoxNjg1MDA5ODc2LCJleHAiOjE2ODUwMTA3NzZ9.BnylZr8WSxRg1Z4q4zW6RF46LvTupFrbp7E_loPjIsg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/v1/management",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "management-get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQG1haWwuY29tIiwiaWF0IjoxNjg1MDA5ODc2LCJleHAiOjE2ODUwMTA3NzZ9.BnylZr8WSxRg1Z4q4zW6RF46LvTupFrbp7E_loPjIsg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/v1/management",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\": \"Parshuram\",\r\n    \"lastname\": \"Patil\",\r\n    \"email\": \"parshuram.patil@outlook.in\",\r\n    \"password\": \"psp\",\r\n    \"role\": \"USER\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api/v1/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-authenticate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "\"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXJzaHVyYW0ucGF0aWxAb3V0bG9vay5pbiIsImlhdCI6MTY4NDk4ODA3NywiZXhwIjoxNjg1MDc0NDc3fQ.tdM69afnBXL68-FNyYe7d4eYDCad87XH6zbyBlF_T3U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"parshuram.patil@outlook.in\",\r\n    \"password\": \"psp\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api/v1/auth/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-dome",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXJzaHVyYW0ucGF0aWxAb3V0bG9vay5pbiIsImlhdCI6MTY4NTAxMDExMCwiZXhwIjoxNjg1MDExMDEwfQ.Yc8mlG36VXrJxd0eBO_N91iJ2J64RP7NpiEaRSThU1Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "user-dome",
+					"host": [
+						"user-dome"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
