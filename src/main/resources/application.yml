@@ -1,0 +1,9 @@
+server:
+  port: 80
+application:
+  security:
+    jwt:
+      secret-key: 4B6150645367566B597033733676397924423F4528482B4D6251655468576D5A
+      expiration: 900000 # 15 minutes
+      refresh-token:
+        expiration: 604800000 # 7 days
